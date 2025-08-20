@@ -1,0 +1,176 @@
+.hiredude-profile-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  font-family: Poppins;
+}
+
+.hiredude-profile-wrapper {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hiredude-profile-card {
+  background: #fff;
+  box-shadow: 0px 1px 3px #f1f5f9;
+  border: 1px solid #cad5e2;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hiredude-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hiredude-profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hiredude-profile-name {
+  color: #1d293d;
+  font-size: 18px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.hiredude-profile-phone {
+  font-size: 14px;
+  color: #62748e;
+}
+
+.hiredude-profile-divider {
+  height: 1px;
+  background: #e5e7eb;
+  width: 100%;
+}
+
+.hiredude-profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hiredude-profile-detail {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #62748e;
+}
+
+.hiredude-profile-text {
+  font-family: Poppins, sans-serif;
+}
+
+.hiredude-profile-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d293d;
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding-bottom: 12px;
+}
+
+.hiredude-profile-applications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hiredude-profile-application-card {
+  width: 100%;
+  max-width: 316px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hiredude-profile-application-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hiredude-profile-application-job {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hiredude-profile-job-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d293d;
+}
+
+.hiredude-profile-company {
+  font-size: 13px;
+  color: #62748e;
+}
+
+.hiredude-profile-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hiredude-profile-applied {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hiredude-profile-applied-label {
+  font-size: 13px;
+  color: #62748e;
+}
+
+.hiredude-profile-applied-date {
+  font-size: 13px;
+  color: #1d293d;
+}
+
+.hiredude-profile-view {
+  font-size: 14px;
+  font-weight: 500;
+  color: #721378;
+  cursor: pointer;
+}
+
+.hiredude-profile-footer {
+  padding: 10px 16px;
+  background: #eff6ff;
+  border-top: 1px solid #dbeafe;
+  font-size: 14px;
+  text-align: center;
+  color: #1d293d;
+}
+
+@media (max-width: 768px) {
+  .hiredude-profile-applications-grid {
+    flex-direction: column;
+  }
+
+  .hiredude-profile-application-card {
+    max-width: 100%;
+  }
+}

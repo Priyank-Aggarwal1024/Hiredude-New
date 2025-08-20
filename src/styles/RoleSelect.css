@@ -1,0 +1,112 @@
+.hiredude-role-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.hiredude-role-label {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  color: #45556c;
+}
+
+.hiredude-role-selectbox {
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #cad5e2;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.hiredude-role-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  color: #1d293d;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hiredude-role-input::placeholder {
+  color: #cad5e2;
+}
+
+.hiredude-role-placeholder {
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #cad5e2;
+}
+
+.hiredude-role-caret {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #62748e;
+}
+
+.hiredude-role-dropdown {
+  margin-top: 4px;
+  background: #fff;
+  border: 1px solid #cad5e2;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hiredude-role-option {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  color: #1d293d;
+}
+
+.hiredude-role-option:hover {
+  background: #f1f5f9;
+}
+
+.hiredude-role-option.selected {
+  background: #e2e8f0;
+  font-weight: 500;
+}
+
+.hiredude-role-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.hiredude-role-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  color: #1d293d;
+}
+
+.hiredude-role-chip-remove {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  color: #1d293d;
+  line-height: 1;
+}

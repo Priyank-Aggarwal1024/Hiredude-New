@@ -1,0 +1,172 @@
+.jd-form {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.jd-form-main {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 20px;
+  border: 1px solid var(--slate-300, #cad5e2);
+  background: var(--white, #fff);
+  box-shadow: 0 1px 3px 0 var(--neutral-100, #f1f5f9);
+  overflow: hidden;
+  margin: 32px auto;
+}
+.jd-form-header-container {
+  padding: 32px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.jd-form-header-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow: hidden;
+}
+.jd-form-header-card.collapsed {
+  max-height: 320px;
+}
+.jd-form-header-card.expanded {
+  height: 100%;
+}
+.jd-form-header-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #1d293d;
+  word-wrap: break-word;
+}
+
+.jd-form-header-content {
+  flex: 1 1 0;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #45556c;
+}
+
+.jd-form-header-content span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.jd-form-header-link {
+  color: #155dfc;
+  text-decoration: underline;
+}
+
+.jd-form-header-readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #721378;
+  cursor: pointer;
+}
+
+.jd-form-header-readmore-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.jd-form-main-inputs {
+  display: flex;
+  padding: 24px 32px 32px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  border-top: 1px solid var(--slate-200, #e2e8f0);
+  background: #fff;
+}
+.jd-form-main-inputs-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.hiredude-loader-wrapper {
+  width: 398px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: auto;
+  height: 100%;
+}
+
+.hiredude-loader-img {
+  width: 56px;
+  height: 56px;
+}
+
+.hiredude-loader-text {
+  color: #90a1b9;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.hiredude-spinner {
+  width: 56px;
+  height: 56px;
+  border: 6px solid #e0e7ff;
+  border-top: 6px solid #4f46e5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .jd-form-header-container {
+    padding: 20px 16px;
+  }
+  .jd-form-main-inputs {
+    padding: 24px 16px;
+  }
+
+  .jd-form-header-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .jd-form-header-content {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .collapsed .jd-form-header-readmore {
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    background-color: white;
+  }
+}
+
+@media (width<580px) {
+  .jd-form-main {
+    margin: 0;
+    border: none;
+  }
+  .jd-form-header-card.collapsed {
+    max-height: 280px;
+  }
+}

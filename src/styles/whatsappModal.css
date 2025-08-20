@@ -1,0 +1,120 @@
+.hiredude-whatsapp {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.hiredude-whatsapp-container {
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hiredude-whatsapp-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hiredude-whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hiredude-whatsapp-icon img {
+  width: 48px;
+  height: 48px;
+  mix-blend-mode: multiply;
+}
+
+.hiredude-whatsapp-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hiredude-whatsapp-title {
+  font-size: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  line-height: 32px;
+  color: #1d293d;
+}
+
+.hiredude-whatsapp-subtitle {
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  color: #62748e;
+}
+
+.hiredude-whatsapp-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.hiredude-whatsapp-input {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid #cad5e2;
+  border-radius: 8px;
+  padding: 14px 16px;
+  position: relative;
+}
+
+.hiredude-whatsapp-prefix {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d293d;
+  font-family: Poppins, sans-serif;
+}
+
+.hiredude-whatsapp-field {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  font-family: Poppins, sans-serif;
+  color: #1d293d;
+}
+
+.hiredude-whatsapp-field::placeholder {
+  color: #cad5e2;
+  font-weight: 400;
+}
+
+.hiredude-whatsapp-cancel {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #62748e;
+}
+@media (width<580px) {
+  .hiredude-whatsapp-container {
+    padding: 24px 16px 40px;
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+  }
+  .hiredude-whatsapp {
+    align-items: flex-end;
+  }
+}
